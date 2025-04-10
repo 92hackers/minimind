@@ -5,17 +5,6 @@
 </div>
 
 <div align="center">
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=jingyaogong/minimind)
-[![GitHub Repo stars](https://img.shields.io/github/stars/jingyaogong/minimind?style=social)](https://github.com/jingyaogong/minimind/stargazers)
-[![GitHub Code License](https://img.shields.io/github/license/jingyaogong/minimind)](LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/jingyaogong/minimind)](https://github.com/jingyaogong/minimind/commits/master)
-[![GitHub pull request](https://img.shields.io/badge/PRs-welcome-blue)](https://github.com/jingyaogong/minimind/pulls)
-[![Collection](https://img.shields.io/badge/🤗-MiniMind%20%20Collection-blue)](https://huggingface.co/collections/jingyaogong/minimind-66caf8d999f5c7fa64f399e5)
-
-</div>
-
-<div align="center">
   <h3>"大道至简"</h3>
 </div>
 
@@ -27,6 +16,7 @@
 
 <div>原仓库：https://github.com/jingyaogong/minimind.git</div>
 
+<div>
 * 此开源项目旨在完全从0开始，仅用3块钱成本 + 2小时！即可训练出仅为25.8M的超小语言模型**MiniMind**。
 * **MiniMind**系列极其轻量，最小版本体积是 GPT-3 的 $\frac{1}{7000}$，力求做到最普通的个人GPU也可快速训练。
 * 项目同时开源了大模型的极简结构-包含拓展共享混合专家(MoE)、数据集清洗、预训练(Pretrain)、监督微调(SFT)、LoRA微调，
@@ -35,60 +25,9 @@
 * 项目所有核心算法代码均从0使用PyTorch原生重构！不依赖第三方库提供的抽象接口。
 * 这不仅是大语言模型的全阶段开源复现，也是一个入门LLM的教程。
 * 希望此项目能为所有人提供一个抛砖引玉的示例，一起感受创造的乐趣！推动更广泛AI社区的进步！
-
-> 为防止误解，“2小时” 基于NVIDIA 3090硬件设备（单卡）测试，“3块钱”
-> 指GPU服务器租用成本，具体规格详情见下文。
+</div>
 
 ---
-
-
-<div align="center">
-
-![minimind2](./images/minimind2.gif)
-
-[🔗🍓推理模型](https://www.modelscope.cn/studios/gongjy/MiniMind-Reasoning) | [🔗🤖常规模型](https://www.modelscope.cn/studios/gongjy/MiniMind) | [🔗🎞️视频介绍](https://www.bilibili.com/video/BV12dHPeqE72/?share_source=copy_web&vd_source=670c2504f88726f8cf4a21ef6147c0e8)
-
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://huggingface.co/collections/jingyaogong/minimind-66caf8d999f5c7fa64f399e5" style="text-decoration: none;">
-          <img src="./images/and_huggingface.png" alt="Hugging Face Logo" style="vertical-align: middle; width: auto; max-width: 100%;" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://www.modelscope.cn/profile/gongjy" style="text-decoration: none;">
-          <img src="./images/and_modelscope.png" alt="ModelScope Logo" style="vertical-align: middle; width: auto; max-width: 100%;" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-
-</div>
-
-# 📌 Introduction
-
-大语言模型（Large Language Model, LLM）的出现引发了全世界对AI的空前关注。
-无论是ChatGPT、DeepSeek还是Qwen，都以其惊艳的效果令人叹为观止。
-然而，动辄数百亿参数的庞大规模，使得它们对个人设备而言不仅难以训练，甚至连部署都显得遥不可及。
-打开大模型的“黑盒子”，探索其内部运作机制，多么令人心潮澎湃！
-遗憾的是，99%的探索只能止步于使用LoRA等技术对现有大模型进行少量微调，学习一些新指令或任务。
-这就好比教牛顿如何使用21世纪的智能手机——虽然有趣，却完全偏离了理解物理本质的初衷。
-与此同时，第三方的大模型框架和工具库，如transformers+trl，几乎只暴露了高度抽象的接口。
-通过短短10行代码，就能完成“加载模型+加载数据集+推理+强化学习”的全流程训练。
-这种高效的封装固然便利，但也像一架高速飞船，将我们与底层实现隔离开来，阻碍了深入探究LLM核心代码的机会。
-然而，“用乐高拼出一架飞机，远比坐在头等舱里飞行更让人兴奋！”。
-更糟糕的是，互联网上充斥着大量付费课程和营销号，以漏洞百出、一知半解的内容推销AI教程。
-正因如此，本项目初衷是拉低LLM的学习门槛，让每个人都能从理解每一行代码开始，
-从零开始亲手训练一个极小的语言模型。是的，从**零开始训练**，而不是仅仅进行**推理**！
-最低只需3块钱不到的服务器成本，就能亲身体验从0到1构建一个语言模型的全过程。
-一起感受创造的乐趣吧！
-
-> [!NOTE]
-> （截至2025-02-07）MiniMind系列已完成多个型号模型的预训练，最小仅需25.8M（0.02B），即可具备流畅对话能力！
 
 <details style="color:rgb(128,128,128)">
 <summary>Models List</summary>
@@ -122,7 +61,7 @@
 
 ### 👉**更新日志**
 
-<details close> 
+<details> 
 <summary> <b>2025-02-09 (newest 🎉🎉🎉)</b> </summary>
 
 - 迎来发布以来重大更新，Release MiniMind2 Series。
@@ -142,7 +81,7 @@
 
 
 
-<details close> 
+<details> 
 <summary> <b>2024-10-05</b> </summary>
 
 - 为MiniMind拓展了多模态能力之---视觉
@@ -152,7 +91,7 @@
 
 
 
-<details close> 
+<details> 
 <summary> <b>2024-09-27</b> </summary>
 
 - 09-27更新pretrain数据集的预处理方式，为了保证文本完整性，放弃预处理成.bin训练的形式（轻微牺牲训练速度）。
@@ -162,7 +101,7 @@
 </details>
 
 
-<details close> 
+<details> 
 <summary> <b>2024-09-17</b> </summary>
 
 - 更新minimind-v1-moe模型
@@ -171,35 +110,12 @@
 </details>
 
 
-<details close>
+<details>
 <summary> <b>2024-09-01</b> </summary>
 
 - 更新minimind-v1 (108M)模型，采用minimind_tokenizer，预训练轮次3 + SFT轮次10，更充分训练，性能更强。
 - 项目已部署至ModelScope创空间，可以在此网站上体验：
 - [🔗ModelScope在线体验🔗](https://www.modelscope.cn/studios/gongjy/minimind)
-
-</details>
-
-
-<details close> 
-<summary> <b>2024-08-27</b> </summary>
-
-- 项目首次开源
-
-</details>
-
-# 📌 快速开始
-
-<details style="color:rgb(128,128,128)">
-<summary>分享本人的软硬件配置（仅供参考）</summary>
-
-* CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz
-* RAM: 128 GB
-* GPU: NVIDIA GeForce RTX 3090(24GB) * 8
-* Ubuntu==20.04
-* CUDA==12.2
-* Python==3.10.16
-* [requirements.txt](./requirements.txt)
 
 </details>
 
